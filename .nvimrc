@@ -149,7 +149,7 @@ if filereadable(expand("~/.nvim/mswin_extract.vim"))
 endif
 
 " {X,HT}ML options
-" ------------
+" ----------------
 augroup filetype_html
     autocmd!
     autocmd filetype html setlocal shiftwidth=2 softtabstop=2 tabstop=2
