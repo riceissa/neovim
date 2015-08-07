@@ -58,7 +58,7 @@ set ruler
 set scrolloff=5
 set sessionoptions-=options
 set showcmd
-set showmatch
+set noshowmatch
 " Show mode name on status line
 set showmode
 set smarttab
@@ -163,6 +163,7 @@ vnoremap fme <Esc>:call FormatText(80)<CR>
 vnoremap fmt <Esc>:call FormatText(80)<CR>
 vnoremap fmo <Esc>:call FormatText(100)<CR>
 
+" See https://github.com/riceissa/autolink for source
 function! PasteLink()
     let link = @+
     let command = 'autolink.py "' . link . '"'
