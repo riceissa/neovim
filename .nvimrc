@@ -24,6 +24,10 @@
 "
 " For more information, please refer to <http://unlicense.org/>
 
+" The intention here was to produce a sane vimrc file that works well on
+" both Vim and Neovim. For a more minimal configuration that is still
+" very good, there is sensible.vim: https://github.com/tpope/vim-sensible
+
 set nocompatible
 set nomodeline
 set modelines=0
@@ -46,6 +50,7 @@ set history=10000
 " Show invisible characters
 set list
 set listchars=nbsp:_,tab:>-,trail:@
+" Always enable mouse
 set mouse=a
 set nrformats=hex
 set number
