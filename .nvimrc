@@ -203,6 +203,7 @@ augroup filetype_html
 augroup END
 
 " Markdown options
+" ----------------
 augroup filetype_markdown
     autocmd!
     autocmd filetype markdown setlocal linebreak nolist
