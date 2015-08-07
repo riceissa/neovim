@@ -142,9 +142,11 @@ nnoremap <leader>mp :r !xclip -sel clip -t text/html -o \| pandoc -f html -t mar
 command! CD :cd %:p:h
 " Make <C-c>, <C-v> work as expected
 silent !stty -ixon > /dev/null 2>/dev/null
-source ~/.nvim/mswin_extract.vim
+if filereadable(expand("~/.nvim/mswin_extract.vim"))
+    source ~/.nvim/mswin_extract.vim
+endif
 
-" HTML options
+" {X,HT}ML options
 " ------------
 augroup filetype_html
     autocmd!
