@@ -202,6 +202,12 @@ augroup filetype_html
     autocmd filetype xml setlocal shiftwidth=2 softtabstop=2 tabstop=2
 augroup END
 
+" Markdown options
+augroup filetype_markdown
+    autocmd!
+    autocmd filetype markdown setlocal linebreak nolist
+augroup END
+
 " Custom digraphs
 " ---------------
 " Use Python's ord() to obtain the integer value of a character. Hit
