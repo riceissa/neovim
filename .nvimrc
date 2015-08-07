@@ -15,7 +15,6 @@ set encoding=utf-8
 set formatoptions=tcqj
 set hidden
 set history=10000
-set langnoremap
 " Show invisible characters
 set list
 set listchars=nbsp:_,tab:>-,trail:@
@@ -143,7 +142,7 @@ nnoremap <leader>mp :r !xclip -sel clip -t text/html -o \| pandoc -f html -t mar
 command! CD :cd %:p:h
 " Make <C-c>, <C-v> work as expected
 silent !stty -ixon > /dev/null 2>/dev/null
-source ~/.vim/mswin_extract.vim
+source ~/.nvim/mswin_extract.vim
 
 " HTML options
 " ------------
