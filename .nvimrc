@@ -136,8 +136,8 @@ nnoremap _ :bp<CR>
 
 " Option toggling (similar to vim-unimpaired)
 " -------------------------------------------
-nnoremap <silent> coh :set hlsearch!<CR>
-nnoremap <silent> col :set list!<CR>
+nnoremap <silent> coh :set hlsearch! hlsearch?<CR>
+nnoremap <silent> col :set list! list?<CR>
 nnoremap <silent> con :set number!<CR>
 nnoremap <silent> cop :set paste! paste?<CR>
 nnoremap <silent> cos :set spell! spell?<CR>
