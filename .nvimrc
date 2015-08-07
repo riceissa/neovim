@@ -140,6 +140,15 @@ nnoremap <silent> coh :set hlsearch! hlsearch?<CR>
 nnoremap <silent> col :set list! list?<CR>
 nnoremap <silent> con :set number!<CR>
 nnoremap <silent> cop :set paste! paste?<CR>
+" Make it easy to switch between programming and prose modes
+function! ToggleRead()
+    if &linebreak
+        set nolinebreak list
+    else
+        set linebreak nolist
+    endif
+endfunction
+nnoremap <silent> cor :call ToggleRead()<CR>
 nnoremap <silent> cos :set spell! spell?<CR>
 function! ToggleSyntax()
     " See :h syntax for the code
