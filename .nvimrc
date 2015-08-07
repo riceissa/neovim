@@ -65,6 +65,8 @@ set smartcase
 
 " Maps
 " ======================================================================
+inoremap jj <Esc>
+inoremap kk <Esc>
 nnoremap j gj
 nnoremap k gk
 vnoremap j gj
@@ -80,6 +82,8 @@ nnoremap <Enter> o<Esc>
 " Easy editing of vimrc
 nnoremap <silent> <leader>ev :tabnew $MYVIMRC<CR>
 nnoremap <silent> <leader>sv :source $MYVIMRC<CR>
+nnoremap <leader>f :tabe `pwd`<CR>
+nnoremap <leader>b :Tex<CR>
 
 " Tabs
 " ----
