@@ -1,4 +1,6 @@
 set nocompatible
+set nomodeline
+set modelines=0
 syntax enable
 let mapleader=' '
 
