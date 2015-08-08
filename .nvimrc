@@ -186,7 +186,7 @@ nnoremap <leader>mp :r !xclip -sel clip -t text/html -o \| pandoc -f html -t mar
 " Other options
 " ======================================================================
 " Change pwd to directory of current file
-command! CD :cd %:p:h
+command! CD :lcd %:p:h
 " Make <C-c>, <C-v> work as expected
 silent !stty -ixon > /dev/null 2>/dev/null
 if filereadable(expand("~/.nvim/mswin_extract.vim"))
