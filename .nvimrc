@@ -115,6 +115,20 @@ nnoremap <silent> <leader>ev :tabnew $MYVIMRC<CR>
 nnoremap <silent> <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>f :tabe `pwd`<CR>
 nnoremap <leader>b :Tex<CR>
+function! SplitTerminal()
+    :lcd %:p:h
+    if has('nvim')
+        :sp | term
+    else
+        :shell
+    endif
+endfunction
+nnoremap <leader>c :call SplitTerminal()<CR>
+" Make <C-c>, <C-v> work as expected
+silent !stty -ixon > /dev/null 2>/dev/null
+if filereadable(expand("~/.nvim/mswin_extract.vim"))
+    source ~/.nvim/mswin_extract.vim
+endif
 
 " Tabs
 " ----
