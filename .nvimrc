@@ -124,11 +124,6 @@ function! SplitTerminal()
     endif
 endfunction
 nnoremap <leader>c :call SplitTerminal()<CR>
-" Make <C-c>, <C-v> work as expected
-silent !stty -ixon > /dev/null 2>/dev/null
-if filereadable(expand("~/.nvim/mswin_extract.vim"))
-    source ~/.nvim/mswin_extract.vim
-endif
 
 " Tabs
 " ----
