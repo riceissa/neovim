@@ -28,6 +28,9 @@
 " both Vim and Neovim. For a more minimal configuration that is still
 " very good, there is sensible.vim: https://github.com/tpope/vim-sensible
 
+" Get the latest version at
+" https://gist.github.com/riceissa/f63dcb42795f7a894362
+
 set nocompatible
 set nomodeline
 set modelines=0
@@ -124,6 +127,7 @@ function! SplitTerminal()
     endif
 endfunction
 nnoremap <leader>c :call SplitTerminal()<CR>
+inoremap <C-U> <C-G>u<C-U>
 
 " Tabs
 " ----
