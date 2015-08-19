@@ -183,6 +183,7 @@ endfunction
 vnoremap fms <Esc>:call FormatText(72)<CR>
 vnoremap fme <Esc>:call FormatText(80)<CR>
 vnoremap fmt <Esc>:call FormatText(80)<CR>
+vnoremap fmh <Esc>:call FormatText(100)<CR>
 vnoremap fmo <Esc>:call FormatText(100)<CR>
 
 " See https://github.com/riceissa/autolink for source
