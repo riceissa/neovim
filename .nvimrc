@@ -163,7 +163,7 @@ function! ToggleRead()
     endif
 endfunction
 nnoremap <silent> cor :call ToggleRead()<CR>
-nnoremap <silent> cos :set spell! spell?<CR>
+nnoremap <silent> cos :setlocal spell! spell?<CR>
 function! ToggleSyntax()
     " See :h syntax for the code
     if exists("g:syntax_on")
