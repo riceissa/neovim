@@ -215,6 +215,12 @@ else
     endif
 endif
 
+" Leave paste mode after escaping
+augroup paste
+    autocmd!
+    au InsertLeave * set nopaste
+augroup END
+
 " {X,HT}ML options
 " ----------------
 augroup filetype_html
