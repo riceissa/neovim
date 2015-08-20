@@ -29,7 +29,7 @@
 " very good, there is sensible.vim: https://github.com/tpope/vim-sensible
 
 " Get the latest version at
-" https://gist.github.com/riceissa/f63dcb42795f7a894362
+" https://github.com/riceissa/neovim
 
 set nocompatible
 set nomodeline
@@ -203,8 +203,14 @@ nnoremap <leader>mp :r !xclip -sel clip -t text/html -o \| pandoc -f html -t mar
 command! CD :lcd %:p:h
 " Make <C-c>, <C-v> work as expected
 silent !stty -ixon > /dev/null 2>/dev/null
-if filereadable(expand("~/.nvim/mswin_extract.vim"))
-    source ~/.nvim/mswin_extract.vim
+if has('nvim')
+    if filereadable(expand("~/.nvim/mswin_extract.vim"))
+        source ~/.nvim/mswin_extract.vim
+    endif
+else
+    if filereadable(expand("~/.vim/mswin_extract.vim"))
+        source ~/.vim/mswin_extract.vim
+    endif
 endif
 
 " {X,HT}ML options
