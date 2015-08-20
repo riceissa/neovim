@@ -203,6 +203,8 @@ nnoremap <leader>mp :r !xclip -sel clip -t text/html -o \| pandoc -f html -t mar
 command! CD :lcd %:p:h
 " Make <C-c>, <C-v> work as expected
 silent !stty -ixon > /dev/null 2>/dev/null
+" Get mswin_extract.vim at
+" https://github.com/riceissa/neovim/blob/master/mswin_extract.vim
 if has('nvim')
     if filereadable(expand("~/.nvim/mswin_extract.vim"))
         source ~/.nvim/mswin_extract.vim
