@@ -128,6 +128,7 @@ function! SplitTerminal()
 endfunction
 nnoremap <leader>c :call SplitTerminal()<CR>
 inoremap <C-U> <C-G>u<C-U>
+inoremap <C-w> <C-G>u<C-w>
 
 " Tabs
 " ----
