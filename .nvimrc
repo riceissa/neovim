@@ -235,6 +235,9 @@ augroup END
 " ----------------
 augroup filetype_markdown
     autocmd!
+    autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+    autocmd BufNewFile,BufRead *.pdc setlocal filetype=markdown
+    autocmd BufNewFile,BufRead *.page setlocal filetype=markdown
     autocmd filetype markdown setlocal linebreak nolist
 augroup END
 
